@@ -33,22 +33,41 @@
     <!-- header section -->
     <header>
         <!-- nav bar -->
-        <div class="lg:mx-36 my-14 lg:flex justify-between">
-            <div class="lg:flex items-center text-3xl font-extrabold">
-                <h2>Hockey’s</h2>
+        <div class="navbar bg-base-100 lg:px-36 my-14">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Content</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Hockey’s</a>
             </div>
-            <nav class="lg:flex hidden">
-                <ul class="flex justify-center items-center gap-x-10">
-                    <li class="font-bold text-red-600"><a href="#">Home</a></li>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Pages</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Content</a></li>
                 </ul>
-            </nav>
-            <div class="flex items-center gap-x-6">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button class="px-6 py-4 bg-red-600 text-white font-bold text-xl rounded-md">Get Ticket</button>
+            </div>
+            <div class="navbar-end">
+                <div class="flex items-center gap-x-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="px-6 py-4 bg-red-600 text-white font-bold text-xl rounded-md">Get Ticket</button>
+                </div>
             </div>
         </div>
         <!-- slider section -->
@@ -500,25 +519,25 @@
                 </div>
                 <div class="w-full">
                     <form>
-                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6">
+                        <div class="my-4 lg:my-0 flex flex-col lg:grid lg:grid-cols-2 gap-6">
                             <div>
                                 <h2 class="text-xl font-bold">Your Name</h2>
-                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-[400px]"
+                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-full"
                                     placeholder="Enter your full name" type="text" name="Your Name" id="">
                             </div>
                             <div>
                                 <h2 class="text-xl font-bold">Your Email</h2>
-                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-[400px]"
-                                    placeholder="Enter your email" type="email" name="" id="">
+                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-full" placeholder="Enter your email"
+                                    type="email" name="" id="">
                             </div>
                             <div>
                                 <h2 class="text-xl font-bold">Subject</h2>
-                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-[400px]"
+                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-full"
                                     placeholder="Enter your subject" type="text" name="Subject" id="">
                             </div>
                             <div>
                                 <h2 class="text-xl font-bold">Phone Number</h2>
-                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-[400px]"
+                                <input class="my-4 p-5 bg-[#13131808] rounded-lg w-full"
                                     placeholder="Enter your phone number" type="text" name="Phone Number" id="">
                             </div>
                             <div class="col-span-2">
