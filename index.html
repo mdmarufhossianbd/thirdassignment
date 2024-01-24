@@ -33,11 +33,11 @@
     <!-- header section -->
     <header>
         <!-- nav bar -->
-        <div class="mx-36 my-14 flex justify-between">
-            <div class=" flex items-center text-3xl font-extrabold">
-                <h2 class="">Hockey’s</h2>
+        <div class="lg:mx-36 my-14 lg:flex justify-between">
+            <div class="lg:flex items-center text-3xl font-extrabold">
+                <h2>Hockey’s</h2>
             </div>
-            <nav class="flex">
+            <nav class="lg:flex hidden">
                 <ul class="flex justify-center items-center gap-x-10">
                     <li class="font-bold text-red-600"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -51,17 +51,17 @@
                 <button class="px-6 py-4 bg-red-600 text-white font-bold text-xl rounded-md">Get Ticket</button>
             </div>
         </div>
-
         <!-- slider section -->
-        <div class="mx-36">
+        <div class="mx-5 lg:mx-36">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div
+                        class="flex absolute lg:flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
-                    <div class="bg-black p-9 absolute rounded-md w-[600px] text-white bottom-12 right-12">
+                    <div class="bg-black lg:p-9 lg:absolute rounded-md lg:w-[600px] text-white bottom-12 right-12">
                         <h2 class="text-3xl font-extrabold">Meet all the heroes from the field</h2>
                         <p class=" text-[#ffffff99] mt-4">Dit amet consectetur. Condimentum dignissim
                             adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
@@ -86,17 +86,12 @@
         <!-- Professional Hockeys Club Section -->
         <section class="mx-36 my-24">
             <div class="flex flex-col gap-y-6 items-center py-8 border-y-2 border-dashed">
-                <h2 class="text-4xl font-extrabold">
-                    Professional Hockeys Club
-                </h2>
+                <h2 class="text-4xl font-extrabold"> Professional Hockeys Club </h2>
                 <p class="w-[607px] text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
-                    placerat
-                    dolor. Purus urna in
-                    sit nullam proin.
-                </p>
+                    placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
             <!-- Prayer Facility -->
-            <div class="flex justify-around mt-12">
+            <div class="mt-12 lg:flex justify-around ">
                 <div class="flex flex-col items-center">
                     <div>
                         <div class="radial-progress absolute text-[#E7E7E8]" style="--value:100;" role="progressbar">
@@ -135,7 +130,7 @@
                     </div>
                     <div class="text-center">
                         <h2 class="text-xl font-bold mb-4 mt-6">Senior Player</h2>
-                        <p class="w-[250px]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        <p class="w-[250px]">Amet consectetur. Condimentum dignissim adipiscing.</p>
                     </div>
                 </div>
                 <!-- Training Ground -->
@@ -167,7 +162,7 @@
                     sit nullam proin.
                 </p>
             </div>
-            <div class="mt-12 mb-24 grid gap-6 grid-cols-2 text-white">
+            <div class="lg:mt-12 mb-24 grid gap-6 grid-cols-1 lg:grid-cols-2 text-white">
                 <div class="bg-[url('images/2.png')] bg-no-repeat bg-cover col-span-1 rounded-xl">
                     <div class="mx-10 mt-24 mb-9">
                         <h2 class="text-3xl font-extrabold">Junior Program</h2>
@@ -209,7 +204,7 @@
 
         </section>
         <!-- Our New Products section -->
-        <section class="mx-36">
+        <section class="mx-5 lg:mx-36">
             <div class="text-center border-[#13131833] border-y-2 border-dashed">
                 <h2 class="mt-8 font-extrabold text-4xl">
                     Our New Products
@@ -220,11 +215,11 @@
                 </p>
             </div>
             <!-- product card -->
-            <div class="grid grid-cols-2 gap-6 mt-12">
+            <div class="grid grid-cols-1 gap-3 mt-6 lg:grid-cols-2 lg:gap-6 lg:mt-12">
                 <!-- product 1 -->
-                <div class="p-6 border border-[#13131819] rounded-2xl flex gap-6">
+                <div class="p-6 border border-[#13131819] rounded-2xl lg:flex gap-6">
                     <div>
-                        <img src="images/5.png" alt="Hockeys Jersey">
+                        <img src=" images/5.png" alt="Hockeys Jersey">
                     </div>
                     <div>
                         <div class="flex items-center gap-3">
@@ -239,7 +234,7 @@
                             <h3 class="text-xl font-extrabold my-3">World Cup Flags Football</h3>
                             <p class="font-medium mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         </div>
-                        <div class="flex gap-6">
+                        <div class="lg:flex gap-6">
                             <h3 class="font-bold text-lg text-[#FF4240]">Price - $22.00</h3>
                             <div class="flex items-center gap-2">
                                 <i class="fa-solid fa-truck"></i>
@@ -249,7 +244,7 @@
                     </div>
                 </div>
                 <!-- product 2 -->
-                <div class="p-6 border border-[#13131819] rounded-2xl flex gap-6">
+                <div class="p-6 border border-[#13131819] rounded-2xl lg:flex gap-6">
                     <div>
                         <img src="images/6.png" alt="Hockeys Jersey">
                     </div>
@@ -266,7 +261,7 @@
                             <h3 class="text-xl font-extrabold my-3">World Cup Flags Football</h3>
                             <p class="font-medium mb-4">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
                         </div>
-                        <div class="flex gap-6">
+                        <div class="lg:flex gap-6">
                             <h3 class="font-bold text-lg text-[#FF4240]">Price - $22.00</h3>
                             <div class="flex items-center gap-2">
                                 <i class="fa-solid fa-truck"></i>
@@ -386,7 +381,7 @@
             </div>
         </section>
         <!-- Clients Question Section -->
-        <section class="mx-36 my-24">
+        <section class="mx-5 my-12 lg:mx-36 lg:my-24">
             <div class="text-center  border-[#13131833] border-y-2 border-dashed">
                 <h2 class="mt-8 font-extrabold text-4xl">
                     Clients Question
@@ -462,8 +457,8 @@
             </div>
         </section>
         <!-- Get in Touch -->
-        <section class="mx-36 mb-24">
-            <div class="text-center  border-[#13131833] border-y-2 border-dashed">
+        <section class="mx-5 my-12 lg:mx-36 lg:mb-24">
+            <div class="text-center border-[#13131833] border-y-2 border-dashed">
                 <h2 class="mt-8 font-extrabold text-4xl">
                     Get In Touch
                 </h2>
@@ -473,7 +468,7 @@
                 </p>
             </div>
             <!-- contact details -->
-            <div class="mt-12 flex gap-x-12">
+            <div class="mt-6 lg:mt-12 lg:flex lg:flex-row flex-col gap-x-12">
                 <div class="p-12 border border-[#13131819] rounded-2xl">
                     <div class="p-10 bg-[#BCED6D1A] rounded-2xl">
                         <img src="images/Group 1171275317.png">
@@ -503,7 +498,7 @@
                 </div>
                 <div class="w-full">
                     <form>
-                        <div class="grid grid-cols-2 gap-6">
+                        <div class="flex flex-col lg:grid lg:grid-cols-2 gap-6">
                             <div>
                                 <h2 class="text-xl font-bold">Your Name</h2>
                                 <input class="my-4 p-5 bg-[#13131808] rounded-lg w-[400px]"
@@ -527,7 +522,7 @@
                             <div class="col-span-2">
                                 <h2 class="py-4 text-xl font-bold">Message</h2>
                                 <textarea class="bg-[#13131807] rounded-xl w-full p-5" placeholder="Write your message"
-                                    name="Message" id="" cols="50" rows="20"></textarea>
+                                    name="Message" id="" cols="30" rows="20"></textarea>
                             </div>
                             <div class="col-span-2">
                                 <input class="p-4 text-xl bg-[#FF4240] text-white font-bold w-full rounded-2xl"
@@ -550,7 +545,7 @@
         </section>
     </main>
     <!-- footer section -->
-    <footer class="px-36 py-24 flex justify-between bg-black text-white">
+    <footer class="mx-5 my-12 lg:px-36 lg:py-24 flex flex-col lg:justify-between bg-black text-white">
         <div>
             <h2 class="mb-5 font-extrabold text-3xl">Get In Touch</h2>
             <p class="mb-6 w-[350px] text-[#ffffff99]">Dit amet consectetur. Condimentum adipiscing aliquam turpis
